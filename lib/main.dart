@@ -177,7 +177,7 @@ class _HomepageState extends State<Homepage>
                                 borderRadius: BorderRadius.circular(20.0),
                                 color: Colors.white),
                             child: Center(
-                              child: Text('17+..',
+                              child: Text('+17..',
                                   style: TextStyle(
                                       fontSize: 14.0, color: Colors.black)),
                             ),
@@ -348,7 +348,7 @@ class _HomepageState extends State<Homepage>
                 icon: new Icon(Icons.home, size: 35.0),
               ),
               Tab(
-                icon: new Icon(Icons.star, size: 35.0),
+                icon: new Icon(Icons.star_border, size: 35.0),
               ),
               Tab(icon: new Icon(Icons.calendar_today, size: 30.0),)
             ],

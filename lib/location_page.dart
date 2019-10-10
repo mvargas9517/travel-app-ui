@@ -16,7 +16,6 @@ class _LocationPageState extends State<LocationPage> {
   @override
   Widget build(BuildContext context) {
         return Scaffold(
-          
           body: AnnotatedRegion<SystemUiOverlayStyle>(
             value: SystemUiOverlayStyle.light,
             child: SingleChildScrollView(
@@ -52,8 +51,8 @@ class _LocationPageState extends State<LocationPage> {
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
-                        bottomRight: Radius.circular(60.0),
-                        bottomLeft: Radius.circular(60.0),
+                        bottomRight: Radius.circular(40.0),
+                        bottomLeft: Radius.circular(40.0),
                       ),
                     ),
                   ),
@@ -65,8 +64,8 @@ class _LocationPageState extends State<LocationPage> {
                             tag: widget.location.imageUrl,
                             child: ClipRRect(
                               borderRadius: BorderRadius.only(
-                                bottomLeft: Radius.circular(60.0),
-                                bottomRight: Radius.circular(60.0),
+                                bottomLeft: Radius.circular(40.0),
+                                bottomRight: Radius.circular(40.0),
                               ),
                               child: Container(
                                 height: 300,
@@ -168,14 +167,14 @@ class _LocationPageState extends State<LocationPage> {
                                     padding: const EdgeInsets.only(right: 10.0),
                                     child: Container(
                                       height: 75.0,
-                                      width: 50.0,
+                                      width: 55.0,
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(25.0),
                                         color: Colors.grey[300].withOpacity(0.5),
                                       ),
                                       child: Padding(
                                         padding: const EdgeInsets.only(top: 25.0),
-                                        child: Icon(Icons.favorite_border, size: 28.0,),
+                                        child: Icon(Icons.favorite_border, size: 25.0,),
                                       )),
                                   ),
                                 ],
@@ -213,23 +212,25 @@ class _LocationPageState extends State<LocationPage> {
                                     borderRadius: BorderRadius.circular(20.0),
                                     color: Colors.deepOrange[400]),
                                 child: Center(
-                                  child: Text('17+..',
+                                  child: Text('+17',
                                       style: TextStyle(
-                                          fontSize: 14.0, color: Colors.black)),
+                                          fontSize: 14.0, color: Colors.white)),
                                     ),
                                     ),
                                   ),
                                   Positioned(
-                                    right: 25,
+                                    right: 28,
                                     top: 8,
                                     child: Text('More', style: TextStyle(
                                       color: Colors.grey,
-                                      fontSize: 20.0
+                                      fontSize: 18.0,
+                                      fontWeight: FontWeight.w700,
+                                      letterSpacing: 0.5,
                                       )),
                                   ),
                                   Positioned(
                                     right: 0,
-                                    top: 10,
+                                    top: 8,
                                     child: Icon(Icons.keyboard_arrow_down, color: Colors.grey,),
                                   ),
                                 ],
