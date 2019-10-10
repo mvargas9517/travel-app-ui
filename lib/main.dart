@@ -70,21 +70,21 @@ class _HomepageState extends State<Homepage>
                         borderRadius: BorderRadius.circular(30.0),
                         child: Container(
                           height: 300,
-                          color: Colors.black.withOpacity(0.3),
+                          color: Colors.black.withOpacity(0.55),
                         ),
                       ),
                   Positioned(
                     top: 25.0,
-                    left: 30.0,
+                    left: 20.0,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Container(
-                          height: 40.0,
+                          height: 50.0,
                           width: 80.0,
                           decoration: BoxDecoration(
-                            color: Colors.grey.withOpacity(0.7),
-                            borderRadius: BorderRadius.circular(20),
+                            color: Colors.grey.withOpacity(0.5),
+                            borderRadius: BorderRadius.circular(30),
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
