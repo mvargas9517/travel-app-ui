@@ -1,0 +1,4 @@
+#Fri Oct 18 00:55:13 CDT 2019
+base.0=/Users/macen_code/code/travel-app-ui/build/app/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex

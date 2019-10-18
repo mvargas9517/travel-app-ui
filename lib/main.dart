@@ -308,7 +308,7 @@ class _HomepageState extends State<Homepage>
                           ),
             SizedBox(height: 25.0),
             Container(
-              height: 300,
+              height: 250,
               color: Colors.white,
               width: double.infinity,
               child: PageView.builder(
@@ -357,7 +357,7 @@ class _HomepageState extends State<Homepage>
             indicatorSize: TabBarIndicatorSize.label,
             indicatorPadding: EdgeInsets.all(5.0),
             indicatorColor: Colors.transparent,
-            labelPadding: EdgeInsets.symmetric(vertical: 25.0),
+            labelPadding: EdgeInsets.symmetric(vertical: 10.0),
           ),
           backgroundColor: Colors.white,
         ),
