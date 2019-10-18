@@ -214,7 +214,7 @@ class _HomepageState extends State<Homepage>
                       child: Stack(
                       children: <Widget>[
                         Positioned(
-                          top: 15.0,
+                          top: 10.0,
                           child: Container(
                             padding: EdgeInsets.only(left: 35.0, right: 35.0),
                             width: MediaQuery.of(context).size.width,
@@ -234,11 +234,11 @@ class _HomepageState extends State<Homepage>
                         ),
                         Column(
                           children: <Widget>[
-                            SizedBox(height: 90.0,),
+                            SizedBox(height: 80.0,),
                             Padding(
                               padding: const EdgeInsets.only(left: 30.0),
                               child: Container(
-                                height: 200,
+                                height: 185,
                                 width: 350,
                                 color: Colors.white,
                                   child: Column(
@@ -248,27 +248,26 @@ class _HomepageState extends State<Homepage>
                                       Text('Where',
                                       style: TextStyle(
                                         color: Colors.orange,
-                                        fontSize: 50.0
+                                        fontSize: 40.0
                                       ),),
                                       Text('will you go',
                                       style: TextStyle(
                                         color: Colors.black,
-                                        fontSize: 50.0
+                                        fontSize: 40.0
                                       ),),
                                       Text('today',
                                       style: TextStyle(
                                         color: Colors.black,
-                                        fontSize: 50.0
+                                        fontSize: 40.0
                                       ),),
                                     ],
                                   ),
                               ),
                             ),
-                            SizedBox(height: 10,),
+                            SizedBox(height: 10),
                             Container(
-                              padding: EdgeInsets.all(13.0),
-                              margin: EdgeInsets.only(left: 5.0),
-                              height: 70, 
+                              padding: EdgeInsets.all(5.0),
+                              height: 60, 
                               width: 330, 
                               decoration: BoxDecoration(
                                 color: Colors.grey[200],
@@ -283,7 +282,7 @@ class _HomepageState extends State<Homepage>
                               ),
                             ),
                           ), 
-                          SizedBox(height: 25.0,),
+                          SizedBox(height: 20.0,),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: <Widget>[
@@ -294,7 +293,7 @@ class _HomepageState extends State<Homepage>
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
                                 Text('Most Popular', style: TextStyle(
-                                  fontSize: 27.0,
+                                  fontSize: 23.0,
                                   fontWeight: FontWeight.w600,
                                 ),),
                                 Icon(Icons.more_horiz,
@@ -306,9 +305,9 @@ class _HomepageState extends State<Homepage>
                           ),
                             ],
                           ),
-            SizedBox(height: 25.0),
+            SizedBox(height: 18.0),
             Container(
-              height: 250,
+              height: 300,
               color: Colors.white,
               width: double.infinity,
               child: PageView.builder(
@@ -357,7 +356,7 @@ class _HomepageState extends State<Homepage>
             indicatorSize: TabBarIndicatorSize.label,
             indicatorPadding: EdgeInsets.all(5.0),
             indicatorColor: Colors.transparent,
-            labelPadding: EdgeInsets.symmetric(vertical: 10.0),
+            labelPadding: EdgeInsets.symmetric(vertical: 8.0),
           ),
           backgroundColor: Colors.white,
         ),

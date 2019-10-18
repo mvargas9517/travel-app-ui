@@ -1,11 +1,19 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/macen_code/code/travel-app-ui/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "C:\\code\\travel-app-ui\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "/Users/macen_code/code/travel-app-ui/android/app/src/main/res/values/styles.xml",
+                    "source": "C:\\code\\travel-app-ui\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "57",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "353"
+                    },
+                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",

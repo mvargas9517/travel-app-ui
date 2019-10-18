@@ -28,7 +28,7 @@ class _LocationPageState extends State<LocationPage> {
                     color: Colors.deepOrange[400],
                   ),
                   Positioned(
-                    bottom: 26,
+                    bottom: 20,
                     child: Container(
                       width: MediaQuery.of(context).size.width,
                       child: Center(
@@ -47,7 +47,7 @@ class _LocationPageState extends State<LocationPage> {
                     ),
                   ),
                   Container(
-                    height: 800,
+                    height: MediaQuery.of(context).size.height * 0.91,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -59,7 +59,7 @@ class _LocationPageState extends State<LocationPage> {
                   Stack(
                       children: <Widget>[ 
                       Container(
-                      height: 450,
+                      height: 375,
                       child: Hero(
                             tag: widget.location.imageUrl,
                             child: ClipRRect(
@@ -81,18 +81,18 @@ class _LocationPageState extends State<LocationPage> {
                 child: Row(
                   children: <Widget>[
                     Icon(Icons.minimize, size: 35, color: Colors.deepOrange,),
-                    Icon(Icons.fiber_manual_record, size: 12, color: Colors.grey),
-                    Icon(Icons.fiber_manual_record, size: 12, color: Colors.grey),
+                    Icon(Icons.fiber_manual_record, size: 12, color: Colors.grey[600]),
+                    Icon(Icons.fiber_manual_record, size: 12, color: Colors.grey[600]),
                   ],
                 ),
               ),
               Positioned(
                       right: 25,
                       top: 60,
-                      child: Icon(Icons.save_alt, size: 35.0, color: Colors.white,),
+                      child: Icon(Icons.file_upload, size: 30.0, color: Colors.white,),
               ),
               Positioned(
-                top: 60,
+                top: 52,
                 left: 25,
                 child: Row(
                   children: <Widget>[
@@ -106,7 +106,7 @@ class _LocationPageState extends State<LocationPage> {
                     ),
                     SizedBox(width: 35.0),
                     Container(
-                      height: 50.0,
+                      height: 45.0,
                       width: 100.0,
                       decoration: BoxDecoration(
                         color: Colors.grey[300].withOpacity(0.4),
@@ -130,19 +130,19 @@ class _LocationPageState extends State<LocationPage> {
                       ], 
                       ),
               Positioned(
-                top: 470,
+                top: 390,
                 child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Padding(
                         padding: const EdgeInsets.only(left: 25.0),
                         child: Container(
-                          height: 300,
-                          width: MediaQuery.of(context).size.width - 70.0,
-                          color: Colors.white,
+                          height: MediaQuery.of(context).size.height * 0.41,
+                          width: MediaQuery.of(context).size.width - 60.0,
                           child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: <Widget>[
+                              SizedBox(height: 3),
                               Row(
                                 children: <Widget>[
                                   Icon(Icons.location_on,
@@ -159,14 +159,14 @@ class _LocationPageState extends State<LocationPage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: <Widget>[
                                   Text(widget.location.placethree, style: TextStyle(
-                                    fontSize: 40.0,
+                                    fontSize: 35.0,
                                     fontWeight: FontWeight.w500,
                                     letterSpacing: 1.5,
                                   ),),
                                   Padding(
-                                    padding: const EdgeInsets.only(right: 10.0),
+                                    padding: const EdgeInsets.only(right: 15.0),
                                     child: Container(
-                                      height: 75.0,
+                                      height: 80.0,
                                       width: 55.0,
                                       decoration: BoxDecoration(
                                         borderRadius: BorderRadius.circular(25.0),
@@ -179,18 +179,18 @@ class _LocationPageState extends State<LocationPage> {
                                   ),
                                 ],
                               ),
-                              SizedBox(height: 35.0),
+                              SizedBox(height: 25.0),
                               Stack(
                                   children: <Widget>[ 
                               Row(
                                   children: <Widget>[
                                     Text('Recommendation', style: TextStyle(
-                                      fontSize: 20.0
+                                      fontSize: 16.0
                                     ),),
-                                SizedBox(width: 15.0),
+                                SizedBox(width: 8.0),
                                 Stack(
                                     children: <Widget> [
-                                    Container(height: 40.0, width: 180.0,),
+                                    Container(height: 40.0, width: 175.0,),
                                     Container(
                                     height: 40.0,
                                     width: 40.0,
@@ -219,7 +219,7 @@ class _LocationPageState extends State<LocationPage> {
                                     ),
                                   ),
                                   Positioned(
-                                    right: 28,
+                                    right: 25,
                                     top: 8,
                                     child: Text('More', style: TextStyle(
                                       color: Colors.grey,
@@ -239,11 +239,14 @@ class _LocationPageState extends State<LocationPage> {
                           ),
                           ],
                         ),
-                        SizedBox(height: 55.0),
+                        SizedBox(height: 45.0),
                         Text(widget.location.description, style: TextStyle(
+                          fontFamily: 'Monserrat-Regular',
                             fontSize: 15.0,
-                            letterSpacing: 2.0,
-                            wordSpacing: 1.0,
+                            letterSpacing: 1.0,
+                            wordSpacing: 0.5,
+                            fontWeight: FontWeight.w500,
+                            color: Colors.grey[600],
                         ),),
                         ],
                       ),
