@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'model/card.dart';
 import 'location_page.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 
 main() {
   runApp(MaterialApp(home:Homepage(),
@@ -74,13 +75,13 @@ class _HomepageState extends State<Homepage>
                         ),
                       ),
                   Positioned(
-                    top: 25.0,
+                    top: 22.0,
                     left: 20.0,
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: <Widget>[
                         Container(
-                          height: 50.0,
+                          height: 45.0,
                           width: 80.0,
                           decoration: BoxDecoration(
                             color: Colors.grey.withOpacity(0.5),
@@ -105,7 +106,7 @@ class _HomepageState extends State<Homepage>
                     ),
                   ),
                   Positioned(
-                    top: 31.0,
+                    top: 30.0,
                     right: 27.0,
                     child: Row(
                       crossAxisAlignment: CrossAxisAlignment.start,
@@ -152,10 +153,10 @@ class _HomepageState extends State<Homepage>
                         style: TextStyle(
                           fontSize: 20.0,
                           fontWeight: FontWeight.w600,
-                          letterSpacing: 1.3,
+                          letterSpacing: 0.5,
                           color: Colors.white,
                         ),),
-                        SizedBox(width: 15.0),
+                        SizedBox(width: 10.0),
                         Stack(
                       children: <Widget>[
                         Container(height: 40.0, width: 100.0),
@@ -176,13 +177,14 @@ class _HomepageState extends State<Homepage>
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(20.0),
                                 color: Colors.white),
-                            child: Center(
-                              child: Text('+17..',
-                                  style: TextStyle(
-                                      fontSize: 14.0, color: Colors.black)),
-                            ),
+                                child: Padding(
+                                  padding: const EdgeInsets.only(top: 12.0, left: 5.0),
+                                  child: Text('+17..',
+                                      style: TextStyle(
+                                          fontSize: 14.0, color: Colors.black)),
+                                ),
+                              ),
                           ),
-                        )
                       ],
                         ),
                       ],
@@ -216,16 +218,16 @@ class _HomepageState extends State<Homepage>
                         Positioned(
                           top: 10.0,
                           child: Container(
-                            padding: EdgeInsets.only(left: 35.0, right: 35.0),
+                            padding: EdgeInsets.only(left: 42.0, right: 35.0),
                             width: MediaQuery.of(context).size.width,
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                                Icon(Icons.blur_circular,
+                                Icon(MaterialCommunityIcons.gamepad_circle,
                                 size: 30,
                                 color: Colors.black87,),
                                 CircleAvatar(
-                                  radius: 30,
+                                  radius: 28,
                                   backgroundImage: AssetImage('images/macen.jpeg'), 
                                 ),
                               ],
@@ -238,7 +240,7 @@ class _HomepageState extends State<Homepage>
                             Padding(
                               padding: const EdgeInsets.only(left: 30.0),
                               child: Container(
-                                height: 185,
+                                height: MediaQuery.of(context).size.height * 0.2,
                                 width: 350,
                                 color: Colors.white,
                                   child: Column(
@@ -247,7 +249,7 @@ class _HomepageState extends State<Homepage>
                                     children: <Widget>[
                                       Text('Where',
                                       style: TextStyle(
-                                        color: Colors.orange,
+                                        color: Colors.deepOrange,
                                         fontSize: 40.0
                                       ),),
                                       Text('will you go',
@@ -341,15 +343,15 @@ class _HomepageState extends State<Homepage>
           bottomNavigationBar: new TabBar(
             tabs: [
               Tab(
-                icon: new Icon(Icons.search, size: 35.0),
+                icon: new Icon(Feather.search, size: 30.0),
               ),
               Tab(
-                icon: new Icon(Icons.home, size: 35.0),
+                icon: new Icon(Feather.home, size: 30.0),
               ),
               Tab(
-                icon: new Icon(Icons.star_border, size: 35.0),
+                icon: new Icon(Feather.star, size: 30.0),
               ),
-              Tab(icon: new Icon(Icons.calendar_today, size: 30.0),)
+              Tab(icon: new Icon(Feather.calendar, size: 28.0),)
             ],
             labelColor: Colors.orange,
             unselectedLabelColor: Colors.grey,

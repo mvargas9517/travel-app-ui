@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'model/card.dart';
 
 
@@ -39,7 +40,7 @@ class _LocationPageState extends State<LocationPage> {
                             Icon(Icons.arrow_forward_ios, color: Colors.white.withOpacity(0.4), size: 16.0,),
                             Icon(Icons.arrow_forward_ios, color: Colors.white.withOpacity(0.5), size: 17.0,),
                             Icon(Icons.arrow_forward_ios, color: Colors.white.withOpacity(0.8), size: 18.0,),
-                            SizedBox(width: 6),
+                            SizedBox(width: 4),
                             RotatedBox(child: Icon(Icons.local_airport, color: Colors.white, size: 35.0, ), quarterTurns: 1,),
                           ],
                         ),
@@ -76,11 +77,14 @@ class _LocationPageState extends State<LocationPage> {
                 ),
               ),
               Positioned(
-                bottom: 10,
+                bottom: 0,
                 left: 190,
                 child: Row(
                   children: <Widget>[
-                    Icon(Icons.minimize, size: 35, color: Colors.deepOrange,),
+                    Padding(
+                      padding: const EdgeInsets.only(bottom: 25.0),
+                      child: Icon(Icons.minimize, size: 40, color: Colors.deepOrange,),
+                    ),
                     Icon(Icons.fiber_manual_record, size: 12, color: Colors.grey[600]),
                     Icon(Icons.fiber_manual_record, size: 12, color: Colors.grey[600]),
                   ],
@@ -89,7 +93,7 @@ class _LocationPageState extends State<LocationPage> {
               Positioned(
                       right: 25,
                       top: 60,
-                      child: Icon(Icons.file_upload, size: 30.0, color: Colors.white,),
+                      child: Icon(Feather.upload, size: 30.0, color: Colors.white,),
               ),
               Positioned(
                 top: 52,
@@ -151,6 +155,7 @@ class _LocationPageState extends State<LocationPage> {
                                   Text(widget.location.placetwo, style: TextStyle(
                                     fontSize: 17.0,
                                     color: Colors.grey,
+                                    fontWeight: FontWeight.w700,
                                   ),)
                                 ],
                               ),
@@ -185,12 +190,16 @@ class _LocationPageState extends State<LocationPage> {
                               Row(
                                   children: <Widget>[
                                     Text('Recommendation', style: TextStyle(
-                                      fontSize: 16.0
-                                    ),),
+                                      color: Colors.grey[600],
+                                      fontSize: 16.0,
+                                      fontWeight: FontWeight.w600,
+                                      letterSpacing: 0.2),),
                                 SizedBox(width: 8.0),
                                 Stack(
                                     children: <Widget> [
-                                    Container(height: 40.0, width: 175.0,),
+                                    Container(
+                                    height: 40.0,
+                                    width: MediaQuery.of(context).size.width * 0.51),
                                     Container(
                                     height: 40.0,
                                     width: 40.0,
@@ -222,16 +231,16 @@ class _LocationPageState extends State<LocationPage> {
                                     right: 25,
                                     top: 8,
                                     child: Text('More', style: TextStyle(
-                                      color: Colors.grey,
-                                      fontSize: 18.0,
-                                      fontWeight: FontWeight.w700,
+                                      color: Colors.grey[600],
+                                      fontSize: 17.0,
+                                      fontWeight: FontWeight.w600,
                                       letterSpacing: 0.5,
                                       )),
                                   ),
                                   Positioned(
                                     right: 0,
                                     top: 8,
-                                    child: Icon(Icons.keyboard_arrow_down, color: Colors.grey,),
+                                    child: Icon(Icons.keyboard_arrow_down, color: Colors.grey[600],),
                                   ),
                                 ],
                                 ),
@@ -239,13 +248,11 @@ class _LocationPageState extends State<LocationPage> {
                           ),
                           ],
                         ),
-                        SizedBox(height: 45.0),
+                        SizedBox(height: 65.0),
                         Text(widget.location.description, style: TextStyle(
-                          fontFamily: 'Monserrat-Regular',
                             fontSize: 15.0,
-                            letterSpacing: 1.0,
-                            wordSpacing: 0.5,
-                            fontWeight: FontWeight.w500,
+                            letterSpacing: 0.5,
+                            fontWeight: FontWeight.w400,
                             color: Colors.grey[600],
                         ),),
                         ],
